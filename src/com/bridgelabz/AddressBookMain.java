@@ -7,6 +7,6 @@ public class AddressBookMain {
 		
 		Contact contact = new Contact("Kiran", "Dhanwai", "Aurangabad", "Aurangabad", 123456, "Maharashtra",
 				"1234567890", "kiran@gmail.com");
-		System.out.println(contact);
+		System.out.println( contact );
 		}
 }
