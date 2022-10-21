@@ -13,6 +13,7 @@ public class AddressBook {
 			System.out.println("1.Adding New Contact");
 			System.out.println("2.Check Added Contact");
 			System.out.println("3.Edit Added Contact");
+			System.out.println("4.Delete Added Contact");
 
 			System.out.println("Enter your choice");
 			choice = sc.nextInt();
@@ -72,9 +73,20 @@ public class AddressBook {
 						System.out.println("First name not found.");
 					}
 				}
+			case 4:
+				System.out.println("Enter first name of the person for delete :");
+				firstName1 = input.next();
+				for (Contact eachContact : array) {
+					if (eachContact.getFirstName().equals(firstName1)) {
+						array.remove(eachContact);
+						System.out.println("Contact deleted");
+						break;
+					} else {
+						System.out.println("Contact not found with this name");
+					}
+				}
+
 			}
-
-		} while (choice == 1 || choice == 2 || choice == 3);
+		} while (choice == 1 || choice == 2 || choice == 3 || choice == 4);
 	}
-
 }
