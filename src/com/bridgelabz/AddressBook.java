@@ -22,7 +22,7 @@ public class AddressBook {
 			switch (choice) {
 			case 1:
 
-				System.out.println("Enter the details of contact person");
+				System.out.println("Enter the details of contact person ");
 				System.out.print("Enter first name:");
 				String firstName = input.nextLine();
 				System.out.print("Enter last name:");
